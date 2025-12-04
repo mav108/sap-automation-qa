@@ -1,0 +1,114 @@
+# NG4_DB:
+#   hosts:
+#     apmlr1grdhdb01:
+#       ansible_host        : 10.186.92.132
+#       ansible_user        : ansibleapmlr1grdhdb01
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4db0001
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1grdhdb01
+
+#     apmlr1grdhdb02:
+#       ansible_host        : 10.186.92.134
+#       ansible_user        : ansibleapmlr1grdhdb02
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4db0002
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1grdhdb02
+
+#   vars:
+#     node_tier             : hana
+#     supported_tiers       : [hana]
+
+# NG4_SCS:
+#   hosts:
+#     apmlr1grascs01:
+#       ansible_host        : 10.186.90.134
+#       ansible_user        : ansibleapmlr1grascs01
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4cs6101
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1grascs01
+
+#   vars:
+#     node_tier             : scs
+#     supported_tiers       : [scs]
+
+NG4_ERS:
+  hosts:
+    apmlr1graers01:
+      ansible_host        : 10.186.90.136
+      ansible_user        : ansibleapmlr1graers01
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mng4er6301
+      become_user         : root
+      os_type             : linux
+      vm_name             : apmlr1graers01
+
+  vars:
+    node_tier             : ers
+    supported_tiers       : [ers]
+
+
+# NG4_PAS:
+#   hosts:
+#     apmlr1graapp01:
+#       ansible_host        : 10.186.90.138
+#       ansible_user        : ansibleapmlr1graapp01
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4ap6401
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp01
+
+#   vars:
+#     node_tier             : pas
+#     supported_tiers       : [pas]
+
+# NG4_APP:
+#   hosts:
+#     apmlr1graapp02:
+#       ansible_host        : 10.186.90.140
+#       ansible_user        : ansibleapmlr1graapp02
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4ap6402
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp02
+
+# NG4_APP:
+#   hosts:
+#     apmlr1graapp03:
+#       ansible_host        : 10.186.90.142
+#       ansible_user        : ansibleapmlr1graapp03
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4ap6403
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp03
+
+# NG4_APP:
+#   hosts:
+#     apmlr1graapp04:
+#       ansible_host        : 10.186.90.144
+#       ansible_user        : ansibleapmlr1graapp04
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mng4ap6404
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp04
+
+  vars:
+    node_tier             : app
+    supported_tiers       : [app]
