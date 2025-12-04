@@ -17,7 +17,7 @@ SAP_FUNCTIONAL_TEST_TYPE:   DatabaseHighAvailability
 SYSTEM_CONFIG_NAME:         DEV-WEEU-SAP01-X00
 # Choose the type of authentication you configured for a local account on the SAP VMs.
 # String: VMPASSWORD SSHKEY
-AUTHENTICATION_TYPE:        SSHKEY
+AUTHENTICATION_TYPE:        VMPASSWORD
 
 # Test Results Destination
 # Options: Azure Log Analytics Workspace: azureloganalytics, Azure Data Explorer: azuredataexplorer
