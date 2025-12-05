@@ -1,28 +1,28 @@
-BDR_DB:
-  hosts:
-    locr1bdrodb01:
-      ansible_host        : 33.66.120.136
-      ansible_user        : mladmin
-      ansible_connection  : ssh
-      connection_type     : key
-      virtual_host        : mlbdrdb
-      become_user         : root
-      os_type             : linux
-      vm_name             : locr1bdrodb01
+# BDR_DB:
+#   hosts:
+#     locr1bdrodb01:
+#       ansible_host        : 33.66.120.136
+#       ansible_user        : mladmin
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mlbdrdb
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : locr1bdrodb01
 
-    locr1bdrodb02:
-      ansible_host        : 33.66.120.135
-      ansible_user        : mladmin
-      ansible_connection  : ssh
-      connection_type     : key
-      virtual_host        : mlbdrdb
-      become_user         : root
-      os_type             : linux
-      vm_name             : locr1bdrodb02
+#     locr1bdrodb02:
+#       ansible_host        : 33.66.120.135
+#       ansible_user        : mladmin
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mlbdrdb
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : locr1bdrodb02
 
-  vars:
-    node_tier             : hana
-    supported_tiers       : [hana]
+#   vars:
+#     node_tier             : hana
+#     supported_tiers       : [hana]
 
 BDR_SCS:
   hosts:
