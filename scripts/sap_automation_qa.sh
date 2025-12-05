@@ -445,8 +445,10 @@ run_ansible_playbook() {
 
                 check_file_exists "$temp_file" \
                     "Temporary password file not found. Please check the Key Vault secret ID."
+                pswd=$(cat "$temp_file")
+                log "INFO" "Retrieved VM password from Key Vault is: $pswd"
                 command="ansible-playbook ${cmd_dir}/../src/$playbook_name.yml -i $system_hosts \
-                    --extra-vars 'ansible_ssh_pass=$(cat $temp_file)' --extra-vars @$VARS_FILE -e @$system_params \
+                    --extra-vars 'ansible_ssh_pass=$pswd' --extra-vars @$VARS_FILE -e @$system_params \
                     -e '_workspace_directory=$system_config_folder' $extra_vars"
             else
                 local password_file="${cmd_dir}/../WORKSPACES/SYSTEM/$SYSTEM_CONFIG_NAME/password"
