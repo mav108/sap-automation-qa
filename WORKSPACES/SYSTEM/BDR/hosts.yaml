@@ -1,24 +1,24 @@
 # BDR_DB:
 #   hosts:
-#     apmlr1grdhdb01:
-#       ansible_host        : 10.186.92.132
-#       ansible_user        : ansibleapmlr1grdhdb01
+#     locr1bdrodb01:
+#       ansible_host        : 33.66.120.136
+#       ansible_user        : mladmin
 #       ansible_connection  : ssh
 #       connection_type     : key
-#       virtual_host        : mBDRdb0001
+#       virtual_host        : mlbdrdb
 #       become_user         : root
 #       os_type             : linux
-#       vm_name             : apmlr1grdhdb01
+#       vm_name             : locr1bdrodb01
 
-#     apmlr1grdhdb02:
-#       ansible_host        : 10.186.92.134
-#       ansible_user        : ansibleapmlr1grdhdb02
+#     locr1bdrodb02:
+#       ansible_host        : 33.66.120.135
+#       ansible_user        : mladmin
 #       ansible_connection  : ssh
 #       connection_type     : key
-#       virtual_host        : mBDRdb0002
+#       virtual_host        : mlbdrdb
 #       become_user         : root
 #       os_type             : linux
-#       vm_name             : apmlr1grdhdb02
+#       vm_name             : locr1bdrodb02
 
 #   vars:
 #     node_tier             : hana
@@ -59,15 +59,15 @@ BDR_ERS:
 
 # BDR_PAS:
 #   hosts:
-#     apmlr1graapp01:
-#       ansible_host        : 10.186.90.138
-#       ansible_user        : ansibleapmlr1graapp01
+#     locr1bdrjap01:
+#       ansible_host        : 33.66.120.7
+#       ansible_user        : mladmin
 #       ansible_connection  : ssh
 #       connection_type     : key
-#       virtual_host        : mBDRap6401
+#       virtual_host        : mlbdra18
 #       become_user         : root
 #       os_type             : linux
-#       vm_name             : apmlr1graapp01
+#       vm_name             : locr1bdrjap01
 
 #   vars:
 #     node_tier             : pas
@@ -75,15 +75,15 @@ BDR_ERS:
 
 # BDR_APP:
 #   hosts:
-#     apmlr1graapp02:
-#       ansible_host        : 10.186.90.140
-#       ansible_user        : ansibleapmlr1graapp02
+#     locr1bdrjap02:
+#       ansible_host        : 33.66.120.8
+#       ansible_user        : mladmin
 #       ansible_connection  : ssh
 #       connection_type     : key
-#       virtual_host        : mBDRap6402
+#       virtual_host        : mlbdra19
 #       become_user         : root
 #       os_type             : linux
-#       vm_name             : apmlr1graapp02
+#       vm_name             : locr1bdrjap02
 
 # BDR_APP:
 #   hosts:
