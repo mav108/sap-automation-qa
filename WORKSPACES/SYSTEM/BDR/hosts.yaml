@@ -26,7 +26,7 @@
 
 BDR_SCS:
   hosts:
-    hocr1bdrjsc01:
+    locr1bdrjsc01:
       ansible_host        : 33.66.120.9
       ansible_user        : mladmin
       ansible_connection  : ssh
@@ -34,7 +34,7 @@ BDR_SCS:
       virtual_host        : mlbdr
       become_user         : root
       os_type             : linux
-      vm_name             : hocr1bdrjsc01
+      vm_name             : locr1bdrjsc01
 
   vars:
     node_tier             : scs
@@ -42,7 +42,7 @@ BDR_SCS:
 
 BDR_ERS:
   hosts:
-    hocr1bdrjer01:
+    locr1bdrjer01:
       ansible_host        : 33.66.120.10
       ansible_user        : mladmin
       ansible_connection  : ssh
@@ -50,7 +50,7 @@ BDR_ERS:
       virtual_host        : mlbdrers
       become_user         : root
       os_type             : linux
-      vm_name             : hocr1bdrjer01
+      vm_name             : locr1bdrjer01
 
   vars:
     node_tier             : ers
