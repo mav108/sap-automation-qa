@@ -1,0 +1,114 @@
+# BDR_DB:
+#   hosts:
+#     apmlr1grdhdb01:
+#       ansible_host        : 10.186.92.132
+#       ansible_user        : ansibleapmlr1grdhdb01
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mBDRdb0001
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1grdhdb01
+
+#     apmlr1grdhdb02:
+#       ansible_host        : 10.186.92.134
+#       ansible_user        : ansibleapmlr1grdhdb02
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mBDRdb0002
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1grdhdb02
+
+#   vars:
+#     node_tier             : hana
+#     supported_tiers       : [hana]
+
+BDR_SCS:
+  hosts:
+    locr1bdrjsc01:
+      ansible_host        : 33.66.120.9
+      ansible_user        : mladmin
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mlbdr
+      become_user         : root
+      os_type             : linux
+      vm_name             : locr1bdrjsc01
+
+  vars:
+    node_tier             : scs
+    supported_tiers       : [scs]
+
+BDR_ERS:
+  hosts:
+    locr1bdrjer01:
+      ansible_host        : 33.66.120.10
+      ansible_user        : mladmin
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mlbdrers
+      become_user         : root
+      os_type             : linux
+      vm_name             : locr1bdrjer01
+
+  vars:
+    node_tier             : ers
+    supported_tiers       : [ers]
+
+
+# BDR_PAS:
+#   hosts:
+#     apmlr1graapp01:
+#       ansible_host        : 10.186.90.138
+#       ansible_user        : ansibleapmlr1graapp01
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mBDRap6401
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp01
+
+#   vars:
+#     node_tier             : pas
+#     supported_tiers       : [pas]
+
+# BDR_APP:
+#   hosts:
+#     apmlr1graapp02:
+#       ansible_host        : 10.186.90.140
+#       ansible_user        : ansibleapmlr1graapp02
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mBDRap6402
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp02
+
+# BDR_APP:
+#   hosts:
+#     apmlr1graapp03:
+#       ansible_host        : 10.186.90.142
+#       ansible_user        : ansibleapmlr1graapp03
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mBDRap6403
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp03
+
+# BDR_APP:
+#   hosts:
+#     apmlr1graapp04:
+#       ansible_host        : 10.186.90.144
+#       ansible_user        : ansibleapmlr1graapp04
+#       ansible_connection  : ssh
+#       connection_type     : key
+#       virtual_host        : mBDRap6404
+#       become_user         : root
+#       os_type             : linux
+#       vm_name             : apmlr1graapp04
+
+  # vars:
+  #   node_tier             : app
+  #   supported_tiers       : [app]
