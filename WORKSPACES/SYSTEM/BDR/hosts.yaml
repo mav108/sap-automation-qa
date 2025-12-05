@@ -1,32 +1,32 @@
-# BDR_DB:
-#   hosts:
-#     apmlr1grdhdb01:
-#       ansible_host        : 10.186.92.132
-#       ansible_user        : ansibleapmlr1grdhdb01
-#       ansible_connection  : ssh
-#       connection_type     : key
-#       virtual_host        : mBDRdb0001
-#       become_user         : root
-#       os_type             : linux
-#       vm_name             : apmlr1grdhdb01
+BDR_DB:
+  hosts:
+    locr1bdrodb01:
+      ansible_host        : 33.66.120.136
+      ansible_user        : mladmin
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mlbdrdb
+      become_user         : root
+      os_type             : linux
+      vm_name             : locr1bdrodb01
 
-#     apmlr1grdhdb02:
-#       ansible_host        : 10.186.92.134
-#       ansible_user        : ansibleapmlr1grdhdb02
-#       ansible_connection  : ssh
-#       connection_type     : key
-#       virtual_host        : mBDRdb0002
-#       become_user         : root
-#       os_type             : linux
-#       vm_name             : apmlr1grdhdb02
+    locr1bdrodb02:
+      ansible_host        : 33.66.120.135
+      ansible_user        : mladmin
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mlbdrdb
+      become_user         : root
+      os_type             : linux
+      vm_name             : locr1bdrodb02
 
-#   vars:
-#     node_tier             : hana
-#     supported_tiers       : [hana]
+  vars:
+    node_tier             : hana
+    supported_tiers       : [hana]
 
 BDR_SCS:
   hosts:
-    hocr1bdrjsc01:
+    locr1bdrjsc01:
       ansible_host        : 33.66.120.9
       ansible_user        : mladmin
       ansible_connection  : ssh
@@ -34,7 +34,7 @@ BDR_SCS:
       virtual_host        : mlbdr
       become_user         : root
       os_type             : linux
-      vm_name             : hocr1bdrjsc01
+      vm_name             : locr1bdrjsc01
 
   vars:
     node_tier             : scs
@@ -42,7 +42,7 @@ BDR_SCS:
 
 BDR_ERS:
   hosts:
-    hocr1bdrjer01:
+    locr1bdrjer01:
       ansible_host        : 33.66.120.10
       ansible_user        : mladmin
       ansible_connection  : ssh
@@ -50,40 +50,40 @@ BDR_ERS:
       virtual_host        : mlbdrers
       become_user         : root
       os_type             : linux
-      vm_name             : hocr1bdrjer01
+      vm_name             : locr1bdrjer01
 
   vars:
     node_tier             : ers
     supported_tiers       : [ers]
 
 
-# BDR_PAS:
-#   hosts:
-#     apmlr1graapp01:
-#       ansible_host        : 10.186.90.138
-#       ansible_user        : ansibleapmlr1graapp01
-#       ansible_connection  : ssh
-#       connection_type     : key
-#       virtual_host        : mBDRap6401
-#       become_user         : root
-#       os_type             : linux
-#       vm_name             : apmlr1graapp01
+BDR_PAS:
+  hosts:
+    locr1bdrjap01:
+      ansible_host        : 33.66.120.7
+      ansible_user        : mladmin
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mlbdra18
+      become_user         : root
+      os_type             : linux
+      vm_name             : locr1bdrjap01
 
-#   vars:
-#     node_tier             : pas
-#     supported_tiers       : [pas]
+  vars:
+    node_tier             : pas
+    supported_tiers       : [pas]
 
-# BDR_APP:
-#   hosts:
-#     apmlr1graapp02:
-#       ansible_host        : 10.186.90.140
-#       ansible_user        : ansibleapmlr1graapp02
-#       ansible_connection  : ssh
-#       connection_type     : key
-#       virtual_host        : mBDRap6402
-#       become_user         : root
-#       os_type             : linux
-#       vm_name             : apmlr1graapp02
+BDR_APP:
+  hosts:
+    locr1bdrjap02:
+      ansible_host        : 33.66.120.8
+      ansible_user        : mladmin
+      ansible_connection  : ssh
+      connection_type     : key
+      virtual_host        : mlbdra19
+      become_user         : root
+      os_type             : linux
+      vm_name             : locr1bdrjap02
 
 # BDR_APP:
 #   hosts:
