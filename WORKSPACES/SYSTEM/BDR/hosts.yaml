@@ -34,7 +34,7 @@ BDR_SCS:
       virtual_host        : mlbdr
       become_user         : root
       os_type             : linux
-      vm_name             : locr1bdrjsc01
+      vm_name             : hocr1bdrjsc01
 
   vars:
     node_tier             : scs
@@ -50,7 +50,7 @@ BDR_ERS:
       virtual_host        : mlbdrers
       become_user         : root
       os_type             : linux
-      vm_name             : locr1bdrjer01
+      vm_name             : hocr1bdrjer01
 
   vars:
     node_tier             : ers
